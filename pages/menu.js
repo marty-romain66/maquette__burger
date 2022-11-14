@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 export default function menu() {
+  useEffect(() => {
+    gsap.fromTo('.cardBurger2',{
+      opacity: 0
+    },{
+      opacity: 1,
+      stagger: 0.15
+
+    })
+  }, []);
+  useEffect(() => {
+    gsap.fromTo('.pageMenu',{
+      opacity: 0,
+     
+    },{
+      opacity: 1,
+  
+
+    })
+  }, []);
   
   return (
     <div className="pageMenu">

@@ -8,16 +8,15 @@ import Footer from "../componantes/Footer";
 import Info from "../componantes/Info";
 import Menu from "../componantes/Menu";
 import getBurgers from "./api/getBurgers";
-
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 export default function Home() {
   
- 
- 
- 
   return (
     <>
       <BoxVideo   />
+      <h3 className="boxOne">Nos Burgers à la une cette semaine ! </h3>
       <Menu />
       <Info/>
       

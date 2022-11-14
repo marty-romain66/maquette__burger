@@ -113,7 +113,7 @@
     margin-bottom: 60vh !important;
   }
   .info{
-    margin : 0 auto 20vh auto !important;
+    margin : 0 auto 30vh auto !important;
     &__text{
       h2 {
         font-size: 2.5rem !important;
@@ -158,5 +158,15 @@
       font-family:  "2";
     }
   }
+
+}
+
+.boxOne{
+  width: 100%;
+  text-align: center;
+  font-family: "2";
+  letter-spacing: 3.5px;
+  font-size: 40px;
+  margin: 33px 0;
 }
 

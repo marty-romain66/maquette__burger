@@ -1,6 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
 
 export default function contact() {
+  useEffect(() => {
+    gsap.fromTo(".pageContact", {
+      opacity: 0,
+      x: 100,
+      }, {
+        duration: 0.3,
+        opacity: 1,
+        x: 0,
+        ease: "power4.out",
+        });
+      
+  }, []);
   return (
     <div className='pageContact'>
         <div className="pageContact__box">
