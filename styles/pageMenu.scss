@@ -11,11 +11,11 @@
     .pageMenu__box{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-    
+        
         grid-gap: 33px;
     .cardBurger2{
         position: relative;
-        height: 300px;
+        height: 350px;
        
         img{
             position: absolute;
@@ -29,7 +29,7 @@
         }
         &__text{
             position: absolute;
-            bottom: 0;
+            top : 5px;
             left: 0;
             width: 100%;
           
@@ -39,10 +39,10 @@
             align-items: center;
             flex-direction: column;
             color: white;
-            font-size: 20px;
+            font-size: 17px;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             text-align: center;
             border-radius: 30px;
             margin-bottom: 10px;

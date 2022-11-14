@@ -49,13 +49,14 @@
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .boxVideo{
     height: 160vh;
   }
   .menu {
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr 1fr;
+   
     
   }
   .cardBurger {

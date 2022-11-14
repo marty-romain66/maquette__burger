@@ -25,7 +25,7 @@ export default function Info() {
   return (
     <div className='info'>
       <div className='info__text'>
-        <h2>Le Big Mac</h2>
+        <h2>Description du Resto</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
           voluptates, quod, quia, voluptate quae voluptatem quibusdam

@@ -3,13 +3,13 @@ import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 
-export default function Layout({ children, data}, ) {
-  console.log(data);
+export default function Layout({ children}) {
+  
   return (
     <>
 
      
-    <Header data={data}/>
+    <Header />
       <main> {children}</main>
       <Footer/>
       <div id="root"></div>

@@ -1,18 +1,18 @@
 import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 
-export default function Header({data}) {
-  const [datas , setDatas] = React.useState(data);
-  const [isTrue, setIsTrue] = React.useState(false);
-  console.log(data);
-  useEffect(() => {
-    if(datas.orderOnline  && datas.orderOnline === "1")
-    {
-      setIsTrue(true);
-    } else {
-      setIsTrue(false);
-    }
-  }, [data]);
+export default function Header() {
+  // const [datas , setDatas] = React.useState(data);
+  // const [isTrue, setIsTrue] = React.useState(false);
+  
+  // useEffect(() => {
+  //   if(datas.orderOnline  && datas.orderOnline === "1")
+  //   {
+  //     setIsTrue(true);
+  //   } else {
+  //     setIsTrue(false);
+  //   }
+  // }, [data]);
 
   const router = useRouter();
   const handleClickH = (e) => {
@@ -43,7 +43,7 @@ const handleClickC = (e) => {
         <ul>
           <li> <a href="" onClick={handleClickH}>Accueil</a> </li>
           <li><a href="" onClick={handleClickM}>Menu</a> </li>
-          { isTrue?  <li><a href="" onClick={handleClickR}>Reserver en ligne</a> </li> : null }
+          {/* { isTrue?  <li><a href="" onClick={handleClickR}>Reserver en ligne</a> </li> : null } */}
          
           <li> <a href="" onClick={handleClickC}>Contact</a> </li>
 
