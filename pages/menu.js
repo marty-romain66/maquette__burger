@@ -5,6 +5,8 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 export default function menu() {
   useEffect(() => {
+    if(window.innerWidth > 768)
+    {
     gsap.fromTo('.cardBurger2',{
       opacity: 0
     },{
@@ -12,6 +14,18 @@ export default function menu() {
       stagger: 0.15
 
     })
+    }
+    else {
+      gsap.fromTo('.cardBurger2',{
+        opacity: 0,
+        x:"-100%"
+      },{
+        opacity: 1,
+        x:0,
+        stagger: 0.15
+
+      })
+    }
   }, []);
   useEffect(() => {
     gsap.fromTo('.pageMenu',{
