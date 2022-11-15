@@ -7,11 +7,11 @@ export default function contact() {
   useEffect(() => {
     gsap.fromTo(".pageContact", {
       opacity: 0,
-      x: 100,
+      y: 100,
       }, {
         duration: 0.3,
         opacity: 1,
-        x: 0,
+        y: 0,
         ease: "power4.out",
         });
       
